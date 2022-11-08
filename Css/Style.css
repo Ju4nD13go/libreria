@@ -1,0 +1,365 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+
+
+body{
+    font-family: 'Raleway', sans-serif;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+.Bus{
+     display: flex;
+     justify-content: left;
+     align-items: center;
+     position: absolute;
+     left: 85%;
+     transform: translate(-50%,-50%);
+     background-color: beige;
+     padding: 10px;
+     height: 80px;
+     border-radius: 100px;
+}
+.Buscador{
+    color:black;
+    border:none;
+    padding: 10px;
+    outline: none;
+    background: none;
+    font-size: 20px;
+    line-height: 60px;
+    transition: .3s;
+    float: left;
+    width: 0px;
+    display: block;
+
+}
+.boton{
+    width: 40px;
+    height: 15px;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+/*=?=======RESPONSIVE PC=======*/
+@media screen and (min-width:1024px) {
+    .Bus:hover > .Buscador{
+        width: 500px;
+    }   
+}
+@media screen and (min-width:480px) {
+    .Bus:hover > .Buscador{
+        width: 190px;
+    }
+}
+@media screen and (min-width:768px) {
+    .Bus:hover > .Buscador{
+        width: 300px;
+    }
+}        
+
+nav a{
+    text-decoration: none;
+    display: inline-block;
+    color: black;
+    margin-right: 10px;
+    font-weight: 300;
+    font-family: 'Oswald', sans-serif;
+    padding: 5px 15px;
+    border-radius: 30px;
+}
+nav a:hover{
+    background-color: white;
+}
+
+.contenedor{
+    text-align: center;
+
+}
+
+.contenedor{
+    width: 90%;
+    margin:  0 auto;
+    overflow: hidden;
+    padding: 80px 0;
+    max-width: 1200px;
+    
+}
+
+.subtitulo{
+    color: black;
+    font-size: 2.5rem;
+    margin-bottom: 35px;
+    text-align: center;
+
+}
+
+.hero{
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    background: linear-gradient(90deg, rgba(231, 231, 231, 0.986) 0%, rgba(90, 81, 72, 0.938) 0%, rgb(201, 165, 130) 100%),url('../Portadas/Biblioteca.jpg');
+    
+}
+
+.hero.contenedor{
+    padding: 0;
+
+}
+
+.nav--footer{
+    font-weight: 300;
+    justify-content: flex-start;
+    
+}
+
+.nav__items--footer{
+    padding: 10px;
+
+}
+
+.contenedor{
+    display: flex;
+    height:  calc(100vh - 70px);
+    align-items: center;
+    color: black;
+}
+
+.wave{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+}
+
+.tittle{
+    font-size: 3.2rem;
+
+}
+
+.subtitulos{
+    font-size: 2rem;
+    font-weight: 300 ;
+    margin: 15px 0;
+}
+
+.conocer{
+    text-decoration: none;
+    display: inline-block;
+    color: black;
+    font-family: 'Oswald', sans-serif;
+    padding: 10px 20px;
+    border-radius: 40px;
+    margin: 0 auto;
+    background-color: #EFE9F4;
+    margin-top: 30px;
+
+}
+
+.conocer :hover{
+    background-color: black;
+}
+
+/* contenido */
+
+.primero{
+    text-align: center;
+    padding-top: 5%;
+}
+
+.Imgprin{
+    width: 350px;
+    height: 350px;
+    border-radius: 60%;
+    margin-bottom: 40px;
+    object-fit: cover;
+    object-position: top;
+
+}
+ 
+.disponibles{
+    padding-top: 5%;
+
+}
+
+.ports{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    width: 90%;
+    height: 100%;
+    margin: auto;
+    grid-gap: 50px;
+    background: #F0F7F4;
+    position: relative;
+    
+
+}
+
+.Imagenes{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    transition: all 300ms;
+    
+
+}
+.Imagenes:hover{
+   -webkit-transform: scale(1.3);
+   transform: scale(1.3);
+   
+}
+
+.link{
+    text-decoration: none;
+    display: inline-block;
+    color: black;
+    font-family: 'Oswald', sans-serif;
+    padding: 10px 20px;
+    border-radius: 40px;
+    margin: 0 auto;
+    margin-top: 30px;
+    text-transform: uppercase;
+    transition: all 450ms ease;
+
+}
+
+.a link:hover{
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+}
+/*destacados*/
+
+.destacados{
+    padding-top: 5%;
+}
+
+.destacados__grid{
+    display: grid;
+    height: 100%;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 1em;
+
+   
+}
+
+
+
+.img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+    line-height: 0;
+    filter: blur(0px);
+    transition: filter 0.3s ease-in;
+    transform: scale(1.1);
+}
+
+
+.libros__items:hover .titulo__dest{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    opacity: 1;
+    cursor: pointer;
+
+}
+.titulo__dest{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    color: white;
+    font-size: 1.5sem;
+    font-weight: bold;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 1s;
+
+}
+
+.libros__items:hover .img{
+    filter: blur(2px);
+}
+
+.libros__items{
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.fotos__grid{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap:30px;
+
+}
+
+.fotos__items{
+    width: 95%;
+    margin: 0 auto;
+    background: #EFE9F4;
+    box-shadow: 0 8px 10px rgba(66, 66, 66, .5);
+    border-radius: 7px;
+    padding: 30px 25px;
+    color: black;
+    margin-bottom: 50px;
+    
+}
+
+.persona{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+
+}
+
+
+.fotico{
+    width: 100px;
+    min-width: 100px;
+    height: 100px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    margin-right: 30px;
+}
+
+.Juan{
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.reseña{
+    color: black;
+    font-weight: 300;
+}
+
+.pie{
+    background: linear-gradient(90deg, rgba(231, 231, 231, 0.986) 0%, rgba(90, 81, 72, 0.938) 0%, rgb(201, 165, 130) 100%);
+}
+
+.pies{
+    text-align: center;
+    
+}
